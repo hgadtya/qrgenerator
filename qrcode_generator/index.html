@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QR Genereator - Pandora</title>
+</head>
+<body>
+
+    <div class="container">
+        <p>Enter your website's URL</p>
+        <input type="text" placeholder="Input URL Here" id="qrText">
+
+        <div id="imgBox" style="border: none; outline: none;">
+            <div class="qr-container">
+                <img src="" id="qrImage">
+            </div>
+            <p style="font-size: 10px; display: flex; justify-content: center; text-align: center; align-items: center; margin-top: 8px;">your barcode is ready to scan!</p>
+            <a href="#" id="reloadLink" style="display: flex; justify-content: center; align-items: center; text-align: center; color: darkorchid;">Generate another qr?</a>
+        </div>
+
+        <button onclick="generateQR()">Generate QR Code</button>
+        <a href="http://pandorashop.my.id" id="project" target="_blank">Another Project</a>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
